@@ -1,5 +1,6 @@
 <!DOCTYPE>
 <html>
+<head>
 <style>
 body{
 	background: #99cc33;
@@ -19,13 +20,12 @@ body{
 }
 
 .box{
-	width:60px;
+	width:0px;
 	height:60px;
 	position:absolute;
 	-moz-border-radius:30px;
 	-webkit-border-radius:30px;
 	background: #999966;
-	z-index:33px;
 }
 
 #main{
@@ -40,6 +40,9 @@ body{
 	display:block;
 }
 </style>
+<script src="./jquery.min.js"></script>
+</head>
+<body>
 <div id="main">
 <div class="line">
 <div class="container"><div class="num"><div class="box"></div>5</div></div>
@@ -72,7 +75,36 @@ body{
 <div class="container"><div class="box"></div><div class="num">5</div></div>
 <div class="container"><div class="box"></div><div class="num">5</div></div>
 </div>
-
 </div>
+<script type="text/javascript">
+(function(){	
+	window.setTimeout(function(){$(".box").animate({width: '60px'}, 500);}, 5000);
+	
+	var gFliped = 0;
 
+	$(".box").click(function(){
+		if(gFliped < 2){
+			$(this).toggle();
+			gFliped++;
+		}
+		
+		if(gFliped == 2)
+			checkMatch();
+	});
+	
+	var checkMatch = function(){
+		var factors = new Array;
+		$(".box").each(function(){
+			if($(this).css("display") != 'none'){
+				var num = $(this).siblings(".num").text();
+				factors.push(num);
+			}
+		});
+		
+		
+		
+	}
+})();
+</script>
+</body>
 </html>
