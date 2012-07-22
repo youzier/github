@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+body{
+	background-color: #c99979;
+}
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+}
+
+#y-header{
+	width: 840px;
+	height:36px;
+	margin: auto;
+	margin-top:20px;
+	margin-bottom:40px;
+	position:relative;
+}
+
+.y-f14{
+	font-size:14px;
+}
+
+.y-logo {
+	display:inline-block;
+	margin:0px;
+}
+.y-logo a{
+	float:left;
+	display:block;
+	width:114px;
+	height:36px;
+	text-indent:-99em;
+	background: url(../img/logo.png) no-repeat;
+}
+
+.y-my {
+	padding:3px!important;
+	float:right!important;
+}
+
+.y-mainmeun{
+	float:right;
+	width:650px;
+	height:36px;
+	list-style:none;
+}
+
+a:link a:active a:focus {
+	color: white;
+	text-decoration:none;
+}
+
+.y-mainmeun  li{
+	margin:0px;
+	color:white;
+	float:left;
+	line-height:36px;
+	padding: 0px 0px 0px 20px;
+}
+
+.y-mainmeun a {
+	color:white;
+}
+.y-bg-red {
+	background-color: #aa2116;
+}
+
+#y-recommend{
+	width: 840px;
+	margin: 10px auto;
+	
+}
+
+.y-recommend-list{
+	width: 450px;
+	float:left;
+	display:inline-block;
+}
+.y-recommend-info {
+	float: left;
+	width:380px;
+	height:229px;
+	background-color:white;
+}
+
+.y-user-info{
+	float:right;
+	width:255px;
+	height:229px;
+	background: #dad8d2;
+	display:inline;
+}
